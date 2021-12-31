@@ -1,0 +1,93 @@
+body {
+    background-color: #F2E9E9;
+    margin: 0;
+}
+  
+navbar {
+    background-color: #ffffff;
+    display: flex; 
+    padding: 15px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-family: "Poppins",sans-serif;
+
+}
+
+  .name-1 {
+    padding-top: .4em;
+    padding-left: 1em;
+    flex: 3;
+    font-weight: bold;
+    font-size: larger;
+  }
+  
+  .home,.about-me,.contact {
+    flex: 1;
+    font-size: 1rem;
+    padding-top: .5em;
+  }
+
+  .contacts {
+    padding: .25em;
+    flex: 3;
+    text-align: right;
+  }
+  
+  input {
+    position: absolute;
+    top: 50%;
+  }
+  
+  navbar > img {
+    height: 40px;
+    width: auto; 
+    max-width: 100%;
+    text-align: right;
+    margin-left: 1em;
+  }
+  
+.content {
+    display: flex;
+}
+
+  .face {
+    position: relative;
+    top: 7rem;
+    left: 20%;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    border-radius: 100%;
+    max-width: 15%;
+    height: 100%;
+    float: left;
+    margin: 20px;
+    line-height: 10%;
+  }
+  
+  .begin {
+    position: relative;
+    top: 8rem;
+    left: 25%;
+    margin-left: 20px;
+    width: 40%;
+    font-family: "Poppins",sans-serif;
+}
+  .main {
+      min-width: 100vh;
+      min-height: 100vh;
+  }
+
+  .button {
+    background-color: #303C6C;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 1em;
+  }
+  
+  
