@@ -10,7 +10,8 @@ navbar {
     box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
     z-index: 1;
     font-family: "Poppins",sans-serif;
-
+    position: fixed;
+    width: 100%;
 }
 
   .name-1 {
@@ -21,21 +22,24 @@ navbar {
     font-size: larger;
   }
   
-  .home,.about-me,.contact {
+  .home,.about-me,.contact, .exp {
     flex: 1;
     font-size: 1rem;
     padding-top: .5em;
+    text-decoration: none;
+    color: black;
+    
+  }
+
+  .home:hover,.about-me:hover,.contact:hover, .exp:hover {
+    color: #24305E;
   }
 
   .contacts {
     padding: .25em;
+    padding-right: 30px;
     flex: 3;
     text-align: right;
-  }
-  
-  input {
-    position: absolute;
-    top: 50%;
   }
   
   navbar > img {
@@ -52,11 +56,11 @@ navbar {
 
   .face {
     position: relative;
-    top: 7rem;
+    top: 10rem;
     left: 20%;
     box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
     border-radius: 100%;
-    max-width: 15%;
+    max-width: 17%;
     height: 100%;
     float: left;
     margin: 20px;
@@ -65,7 +69,7 @@ navbar {
   
   .begin {
     position: relative;
-    top: 8rem;
+    top: 11rem;
     left: 25%;
     margin-left: 20px;
     width: 40%;
@@ -77,7 +81,7 @@ navbar {
   }
 
   .button {
-    background-color: #303C6C;
+    background-color: #24305E;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -89,5 +93,150 @@ navbar {
     display: inline-block;
     margin-top: 1em;
   }
+
+  .button:hover {
+    background-color: #4155a5;
+    color: white;
+  }
+
+  .end-contact {
+      background-color: #24305E;
+      color: white;
+      text-align: center;
+      font-family: "Poppins",sans-serif;
+      padding: 15px;
+  }
+
+.end-contact > a {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.end-contact > div {
+    text-align: right;
+    font-size: 15px;
+}
   
-  
+.experiences {
+    font-family: "Poppins",sans-serif;
+    padding: 1ch;
+}
+
+.experience > h2 {
+    padding-left: 2ch;
+}
+
+.title-1 {
+    display: flex;
+    border-left: 6px solid #ecec52;
+}
+
+.title-2 {
+    display: flex;
+    border-left: 6px solid #4199ec;
+}
+
+.title-3 {
+    display: flex;
+    border-left: 6px solid #04AA6D;
+}
+
+.title-4 {
+    display: flex;
+    border-left: 6px solid #ee5757;
+}
+
+.title-1 > h3, .title-2 > h3, .title-3 > h3, .title-4 > h3 {
+    background-color: rgba(139, 132, 132, 0.178);
+    border-radius: 15px;
+    padding: 1ch;
+    margin-left: 1ch;
+}
+
+.experience-1, .experience-2, .experience-3, .experience-4 {
+    background-color: rgba(139, 132, 132, 0.178);
+    padding: 2ch;
+    border-radius: 15px;
+    margin: 3ch;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+} 
+
+.title-1 > img {
+    max-width: 3%;
+    height:fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 2.5ch;
+    margin-right: 1.75ch;
+}
+
+.title-2 > img {
+    max-width: 5%;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 1ch
+}
+
+.title-3 > img, .title-4 > img {
+    max-width: 4%;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 1ch
+}
+
+.project-list {
+    display: flex;
+}
+
+.projects > h2 {
+    padding-left: 2ch;
+    padding-top: 4ch;
+}
+
+.project-1, .project-2, .project-3 {
+    flex: 1;
+    text-align: center;
+    background-color: rgba(139, 132, 132, 0.178);
+    padding: 2ch;
+    border-radius: 15px;
+    margin: 3ch;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+}
+
+.project-1 > img, .project-2 > a > img, .project-3 > a > img {
+    width: 40vh;
+    height: auto;
+    border-radius: 15px;
+}
+
+.project-1 > img:hover, .project-2 > a > img:hover, .project-3 > a > img:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.award-certification {
+    display: flex;
+}
+
+.awards, .certifications {
+    background-color: rgba(139, 132, 132, 0.178);
+    padding: 2ch;
+    border-radius: 15px;
+    margin: 3ch;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    flex: 1;
+}
+
+.certifications {
+    background-image: url(images/violin.jpg);
+    background-size: cover;
+    color: rgb(230, 236, 230);
+}
+
+.awards {
+    background-image: url(images/award.webp);
+    background-size: cover;
+    color: rgb(230, 236, 230);
+}
