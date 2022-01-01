@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #F2E9E9;
     margin: 0;
@@ -52,31 +56,27 @@ navbar {
   
 .content {
     display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
 }
 
   .face {
-    position: relative;
-    top: 10rem;
-    left: 20%;
     box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
     border-radius: 100%;
-    max-width: 17%;
-    height: 100%;
+    max-width: 20%;
+    height: auto;
     float: left;
-    margin: 20px;
-    line-height: 10%;
+    margin: 2em;
   }
   
   .begin {
-    position: relative;
-    top: 11rem;
-    left: 25%;
-    margin-left: 20px;
+    margin-left: 2em;
     width: 40%;
     font-family: "Poppins",sans-serif;
 }
   .main {
-      min-width: 100vh;
+      min-width: 100vw;
       min-height: 100vh;
   }
 
@@ -186,8 +186,14 @@ navbar {
     margin-left: 1ch
 }
 
+.projects {
+    max-width: 100vw;
+
+}
+
 .project-list {
     display: flex;
+    max-width: 100vw;
 }
 
 .projects > h2 {
@@ -206,7 +212,7 @@ navbar {
 }
 
 .project-1 > img, .project-2 > a > img, .project-3 > a > img {
-    width: 40vh;
+    width: 75%;
     height: auto;
     border-radius: 15px;
 }
@@ -239,4 +245,33 @@ navbar {
     background-image: url(images/award.webp);
     background-size: cover;
     color: rgb(230, 236, 230);
+}
+
+@media only screen and (max-width: 850px) {
+    .content {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        max-width: 100vw;
+        text-align: center;
+        flex-direction: column;
+        padding-top: 5em;
+    }
+
+    .begin {
+        width: 75%;
+        margin-left: 50vw;
+        margin-right: 50vw; 
+    }
+
+    .face {
+        min-width: 40%;
+        margin-left: 50vw;
+        margin-right: 50vw;
+    }
+
+    .project-list {
+        flex-direction: column;
+    }
 }
