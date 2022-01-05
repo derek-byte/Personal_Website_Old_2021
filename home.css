@@ -5,6 +5,8 @@ html {
 body {
     background-color: #F2E9E9;
     margin: 0;
+    align-items: center;
+    overflow-y: scroll;
 }
   
 navbar {
@@ -12,10 +14,11 @@ navbar {
     display: flex; 
     padding: 15px;
     box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
-    z-index: 1;
     font-family: "Poppins",sans-serif;
     position: fixed;
+    z-index: 1;
     width: 100%;
+    /* flex-wrap:wrap; */
 }
 
   .name-1 {
@@ -31,9 +34,7 @@ navbar {
     font-size: 1rem;
     padding-top: .5em;
     text-decoration: none;
-    color: black;
-    /* flex-wrap: wrap; */
-    
+    color: black;    
   }
 
   .home:hover,.about-me:hover,.contact:hover, .exp:hover {
@@ -51,7 +52,6 @@ navbar {
     height: 40px;
     width: auto; 
     max-width: 100%;
-    text-align: right;
     margin-left: 1em;
   }
   
@@ -93,6 +93,7 @@ navbar {
     border-radius: 5px;
     display: inline-block;
     margin-top: 1em;
+    /* display: block; */
   }
 
   .button:hover {
@@ -249,7 +250,7 @@ navbar {
     color: rgb(230, 236, 230);
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 700px) {
     .content {
         display: flex;
         height: 100vh;
@@ -259,6 +260,15 @@ navbar {
         text-align: center;
         flex-direction: column;
         padding-top: 5em;
+        transform: translate(0%, 65vh);
+    }
+
+    .contacts {
+        display: none;
+    }
+
+    .button {
+        margin-bottom: 100vh;
     }
 
     .begin {
@@ -269,11 +279,46 @@ navbar {
 
     .face {
         min-width: 40%;
+        /* margin-top: 150vh; */
         margin-left: 50vw;
         margin-right: 50vw;
     }
 
+    .experiences {
+        transform: translate(0%, 40vh);
+    }
+
+    .end-contact {
+        transform: translate(0%, 40vh);
+    }
+
+    .name-1 {
+        display: none;
+    }
+
+    navbar > a {
+        flex: 1;
+        text-align: center;
+    }
+
     .project-list {
         flex-direction: column;
+    }
+
+    .title-1, .title-2, .title-3, .title-4 {
+        flex-direction: column;
+        text-align: center;
+        border-left: none;
+    }
+
+    .title-1 > img, .title-2 > img, .title-3 > img, .title-4 > img {
+        min-width: 40vw;
+        margin: 0;
+        align-self: center;
+        margin-left: 0;
+    }
+
+    .title-1 > h3, .title-2 > h3, .title-3 > h3, .title-4 > h3 {
+        margin-left: 0;
     }
 }
